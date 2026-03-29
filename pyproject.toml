@@ -1,0 +1,33 @@
+[project]
+name = "disk-expansion-precheck"
+version = "0.1.0"
+description = "A minimal MCP Server for disk expansion precheck experiments."
+readme = "README.md"
+authors = [
+    { name = "tryp0xy1us", email = "tryp0xy1us@outlook.com" }
+]
+requires-python = ">=3.12"
+keywords = ["mcp", "model-context-protocol", "disk", "precheck"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "mcp[cli]>=1.26.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/tryp0xy1us/disk-expansion-precheck"
+Repository = "https://github.com/tryp0xy1us/disk-expansion-precheck"
+Issues = "https://github.com/tryp0xy1us/disk-expansion-precheck/issues"
+
+[project.scripts]
+disk-expansion-precheck = "disk_expansion_precheck:main"
+
+[build-system]
+requires = ["uv_build>=0.11.2,<0.12.0"]
+build-backend = "uv_build"
