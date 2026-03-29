@@ -1,8 +1,10 @@
 [project]
 name = "disk-expansion-precheck"
-version = "0.1.0"
+version = "0.1.1"
 description = "A minimal MCP Server for disk expansion precheck experiments."
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [
     { name = "tryp0xy1us", email = "tryp0xy1us@outlook.com" }
 ]
