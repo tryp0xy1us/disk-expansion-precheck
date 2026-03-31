@@ -1,7 +1,7 @@
 [project]
 name = "disk-expansion-precheck"
-version = "0.1.1"
-description = "A minimal MCP Server for disk expansion precheck experiments."
+version = "0.1.2"
+description = "An MCP Server for Alibaba Cloud ECS disk expansion precheck."
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
@@ -9,7 +9,7 @@ authors = [
     { name = "tryp0xy1us", email = "tryp0xy1us@outlook.com" }
 ]
 requires-python = ">=3.12"
-keywords = ["mcp", "model-context-protocol", "disk", "precheck"]
+keywords = ["mcp", "model-context-protocol", "aliyun", "ecs", "disk", "precheck"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -17,8 +17,11 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Operating System :: OS Independent",
     "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Systems Administration",
 ]
 dependencies = [
+    "alibabacloud-ecs20140526==7.6.2",
+    "alibabacloud-hbr20170908==2.4.1",
     "mcp[cli]>=1.26.0",
 ]
 
